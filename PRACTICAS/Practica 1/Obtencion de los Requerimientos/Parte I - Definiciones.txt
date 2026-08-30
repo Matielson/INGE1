@@ -2,4 +2,12 @@
 
 2)- CONSULTAR 
 
-3)- 
+3)- Un Stakeholder es una persona o grupo que se ve afectado por el sistema directa o indirectamente.
+
+4)- Las fuentes más importantes para la obtención de información son: Documentacion, Stakeholders y Especificaciones de sistemas similares.
+
+5)- Interactuadores, personas u otros sistemas que interactuan directamente con nuestro sistema. Indirectos, stakeholders que no utilizan el sistema, 
+pero influyen en los requerimientos. Dominio, caracteristicas y restricciones del dominio que afectan los requerimientos
+
+6)- Tres problemas de comunicación durante la elicitación pueden ser la dificultad de los usuarios para expresar claramente sus necesidades, #$
+la existencia de culturas o vocabularios diferentes y los distintos intereses respecto del sistema a desarrollar.
