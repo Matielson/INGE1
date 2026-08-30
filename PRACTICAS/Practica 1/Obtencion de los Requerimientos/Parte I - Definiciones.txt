@@ -1,1 +1,5 @@
-1)- 
+1)- Un requerimiento es una caracteristica o capacidad que debe tener el sistema a desarrollar para satisfacer una necesidad o alcanzar un objetivo.
+
+2)- CONSULTAR 
+
+3)- 
