@@ -23,7 +23,7 @@ Incluye material útil para practicar programación imperativa, orientada a obje
 
 - **CU – Casos de Uso:** especificación de las interacciones entre los actores y el sistema para alcanzar un determinado objetivo, incluyendo escenarios principales y alternativos.
 
-- **RP – Requerimientos del Producto:** identificación y especificación de las características, funcionalidades y restricciones que debe cumplir el producto de software.
+- **RP – Redes de Petri:** herramienta de modelado utilizada para representar y analizar sistemas concurrentes, mediante plazas, transiciones, arcos y marcas.
 
 - **DTE – Documento de Especificación:** documentación formal y organizada de los requerimientos del sistema, consolidando la información obtenida y modelada durante el proceso de Ingeniería de Requerimientos.
 
