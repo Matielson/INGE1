@@ -16,13 +16,16 @@ En este repositorio se encuentran ejercicios, prácticas y trabajos desarrollado
 Incluye material útil para practicar programación imperativa, orientada a objetos y concurrente.
 
 ## 🧠 Contenidos principales
-- Programación imperativa
-- Lenguaje **Pascal**
-- Introducción a la Programación Orientada a Objetos (POO)
-- Lenguaje **Java**
-- Introduccion a la Programación Concurrente
-- Lenguaje **R-Info**
-- Prácticas, ejercicios y parciales resueltos de los 3 modulos.
+
+- **TER – Técnicas de Elicitación de Requerimientos:** técnicas utilizadas para obtener y descubrir información relevante de los interesados y otras fuentes, como entrevistas, cuestionarios, observación y análisis de documentación.
+
+- **HU – Historias de Usuario:** forma de expresar necesidades o funcionalidades desde la perspectiva del usuario, describiendo qué necesita, para qué lo necesita y sus criterios de aceptación.
+
+- **CU – Casos de Uso:** especificación de las interacciones entre los actores y el sistema para alcanzar un determinado objetivo, incluyendo escenarios principales y alternativos.
+
+- **RP – Requerimientos del Producto:** identificación y especificación de las características, funcionalidades y restricciones que debe cumplir el producto de software.
+
+- **DTE – Documento de Especificación:** documentación formal y organizada de los requerimientos del sistema, consolidando la información obtenida y modelada durante el proceso de Ingeniería de Requerimientos.
 
 ## 📂 Organización del repositorio
 El contenido se encuentra organizado por módulos y/o prácticas.
