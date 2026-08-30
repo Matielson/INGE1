@@ -25,7 +25,7 @@ Incluye material útil para practicar programación imperativa, orientada a obje
 
 - **RP – Redes de Petri:** herramienta de modelado utilizada para representar y analizar sistemas concurrentes, mediante plazas, transiciones, arcos y marcas.
 
-- **DTE – Documento de Especificación:** documentación formal y organizada de los requerimientos del sistema, consolidando la información obtenida y modelada durante el proceso de Ingeniería de Requerimientos.
+- **DTE – Diagramas de Transición de Estados:** modelo que representa los distintos estados en los que puede encontrarse un sistema u objeto y las transiciones que se producen entre ellos ante determinados eventos.
 
 ## 📂 Organización del repositorio
 El contenido se encuentra organizado por módulos y/o prácticas.
