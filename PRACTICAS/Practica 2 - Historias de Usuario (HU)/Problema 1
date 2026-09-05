@@ -1,0 +1,34 @@
+EJERCICIO 1
+Roles:
+- 
+
+HU 1
+ID: Alta de Mobiliario
+TITULO: Como encargado de departamento de mobiliario quiero dar de alta un mobiliario para que pueda ser alquilado.
+REGLAS DE NEGOCIO:
+	- No pueden existir codigos de inventario repetidos.
+CRITERIOS DE RECHAZO:
+- Escenario 1: Alta exitosa
+DADO que el codigo de mueble 5555 no se encuentra registrado
+CUANDO ingresa el codigo de inventario 5555 que no esta repetido, un tipo de mueble, fecha de creacion, fecha de último mantenimiento, estado y el precio de alquiler, y presiona dar de alta
+ENTONCES el mobiliario se carga en sistema
+
+- Escenario 2: Alta fallida por codigo repetido
+DADO que el codigo de mueble 5555 se encuentra registrado
+CUANDO ingresa el codigo de inventario 5555 que no esta repetido, un tipo de mueble, fecha de creacion, fecha de último mantenimiento, estado y el precio de alquiler, y presiona dar de alta
+ENTONCES se informa que el codigo de inventario ingresado, ya esta cargado en el sistema y se redirige para que de de alta otro mobiliario.
+
+HU 2
+ID: Reservar Mobiliario
+TITULO: Como Usuario quiero reservar un alquiler de mobiliario para un evento.
+REGLAS DE NEGOCIO:
+	- La reserva debe incluir como minimo 3 muebles.
+CRITERIOS DE RECHAZO:
+	- Escenario 1: Reserva exitosa
+	DADO que la reserva tiene 3 o mas muebles con estado libre y las condiciones del pago son favorables.
+	CUANDO el usuario ingresa la fecha 08-08-26, lugar del evento: La Plata, cantidad de días: 5 y Sillones: 3 y presiona "reservar"
+	ENTONCES el sistema efectua la reserva e informa que la reserva fue exitosa
+
+	- Escenario 2: Reserva fallida por falta de muebles
+	
+	- Escenario 3:  Reserva fallida por 
