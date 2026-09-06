@@ -32,14 +32,7 @@
 
 **DADO** que la fecha de ingreso está dentro de los 90 días a partir de la fecha actual y la estadía dura 15 o menos días.
 
-**CUANDO** el usuario ingresa:
-
-* Fecha de ingreso: `08/05/26`
-* Fecha de egreso: `18/05/26`
-* Hotel elegido: `Hotel del Rey`
-* Personas hospedadas: `5`
-
-Y aprieta **"Reservar"**.
+**CUANDO** el usuario ingresa la fecha de ingreso `08/05/26`, la fecha de egreso `18/05/26`, hotel elegido `Hotel del Rey` y `5` personas hospedadas, y aprieta **"Reservar"**.
 
 **ENTONCES** se confirma la reserva y se le envía al usuario por correo el código de reserva y un enlace para continuar el pago.
 
@@ -47,14 +40,7 @@ Y aprieta **"Reservar"**.
 
 **DADO** que la fecha de ingreso está fuera de los 90 días a partir de la fecha actual.
 
-**CUANDO** el usuario ingresa:
-
-* Fecha de ingreso: `12/12/26`
-* Fecha de egreso: `17/12/26`
-* Hotel elegido: `Gran Brizo`
-* Personas hospedadas: `4`
-
-Y aprieta **"Reservar"**.
+**CUANDO** el usuario ingresa la fecha de ingreso `12/12/26`, la fecha de egreso `17/12/26`, hotel elegido `Gran Brizo` y `4` personas hospedadas, y aprieta **"Reservar"**.
 
 **ENTONCES** no se efectúa la reserva y se informa:
 
@@ -64,14 +50,7 @@ Y aprieta **"Reservar"**.
 
 **DADO** que la fecha de ingreso está dentro de los 90 días a partir de la fecha actual y la estadía dura más de 15 días.
 
-**CUANDO** el usuario ingresa:
-
-* Fecha de ingreso: `04/09/26`
-* Fecha de egreso: `20/10/26`
-* Hotel elegido: `Hotel del Rey`
-* Personas hospedadas: `2`
-
-Y aprieta **"Reservar"**.
+**CUANDO** el usuario ingresa la fecha de ingreso `04/09/26`, la fecha de egreso `20/10/26`, hotel elegido `Hotel del Rey` y `2` personas hospedadas, y aprieta **"Reservar"**.
 
 **ENTONCES** no se efectúa la reserva y se informa:
 
