@@ -9,7 +9,7 @@
 - Check In
 - Check Out
 
-#### **ID: Reservar Hospedaje**
+### **ID: Reservar Hospedaje**
 
 **TITULO:** Como usuario quiero reservar un hospedaje para hospedarme
 
