@@ -1,0 +1,53 @@
+PROBLEMA 8
+
+Roles:
+- Docente
+- Jefe del area de concursos
+
+HU 1
+ID: Registrar Usuario
+TITULO: Como Docente quiero registrarme en el sistema para inscribirme a un concurso.
+REGLAS DE NEGOCIO:
+El mail debe ser unico
+Los dni deben ser menores a 55 millones y mayores a 12 millones
+
+CRITERIOS DE ACEPTACION:
+
+Escenario 1: Registro exitoso
+DADO un DNI 35123456, que es permitido por el estatuto, un mail "mati@gmail.com" no registrado previamente 
+CUANDO ingresa un DNI 35123456, un mail "mati@gmail.com", nombre: "Matias", apellido: "Nuñez" y presiona el boton "Registrarse"
+ENTONCES el sistema registra el mail como nombre usuario e informa "Usuario registrado exitosamente"
+
+Escenario 2: Registro fallido por mail repetido
+DADO un DNI 30234567, que es permitido por el estatuto y un mail "mati2@gmail.com" ya registrado
+CUANDO ingresa un DNI DNI 30234567, un mail "mati2@gmail.com", nombre: "Matias", apellido: "Nuñez" y presiona el boton "Registrarse"
+ENTONCES el sistema informa "Mail ya registrado, registro fallido".
+
+Escenario 3: Registro fallido por DNI fuera del rango permitido por el estatuto
+DADO un DNI 89200123, fuera del rango permitido por el estatuto de la UNLP, un mail "mati3@gmail.com" no registrado previamente
+CUANDO ingresa un DNI DNI 89200123, un mail "mati3@gmail.com", nombre: "Matias", apellido: "Nuñez" y presiona el boton "Registrarse"
+ENTONCES el sistema informa "Dni no valido para el estatuto de la UNLP, registro fallido".
+
+HU 2
+ID: Inscribir a Concurso
+TITULO: Como docente quiero inscribirme a un concurso para mejorar como docente.
+REGLAS DE NEGOCIO:
+- El docente no podrá inscribirse a más de 3 concursos
+
+CRITERIOS DE ACEPTACION:
+Escenario 1: Inscripcion exitosa
+DADO la materia "Quimica 1" que tiene cupo y esta inscripto a 1 curso
+CUANDO selecciona la materia "Quimica 1" y aprieta el boton "Inscribirse"
+ENTONCES el sistema imprime un comprobante e informa "Inscripcion exitosa"
+
+Escenario 2: Inscripcion fallida por exceso de inscripciones
+DADO la materia "Matematicas 2" que tiene cupo y esta inscripto a 3 cursos
+CUANDO selecciona la materia "Matematicas 2" y aprieta el boton "Inscribirse"             
+ENTONCES el sistema informa "Inscripcion fallida, limite de concursos alcanzado"             -----------------  CONSULTAR ACA SI IMPRIME O NO EL COMPROBANTE
+
+Escenario 3: Inscripcion fallida por falta de cupo
+DADO la materia "Matematicas 3" que no tiene cupo y esta inscripto a 2 cursos
+CUANDO selecciona la materia "Matematicas 3" y aprieta el boton "Inscribirse"
+ENTONCES el sistema informa "Inscripcion fallida, concurso sin cupos disponibles"
+
+
