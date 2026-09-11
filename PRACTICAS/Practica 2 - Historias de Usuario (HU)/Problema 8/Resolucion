@@ -38,12 +38,12 @@ CRITERIOS DE ACEPTACION:
 Escenario 1: Inscripcion exitosa
 DADO la materia "Quimica 1" que tiene cupo y esta inscripto a 1 curso
 CUANDO selecciona la materia "Quimica 1" y aprieta el boton "Inscribirse"
-ENTONCES el sistema imprime un comprobante e informa "Inscripcion exitosa"
+ENTONCES el sistema da de alta la inscripcion, imprime un comprobante e informa "Inscripcion exitosa"
 
 Escenario 2: Inscripcion fallida por exceso de inscripciones
 DADO la materia "Matematicas 2" que tiene cupo y esta inscripto a 3 cursos
 CUANDO selecciona la materia "Matematicas 2" y aprieta el boton "Inscribirse"             
-ENTONCES el sistema informa "Inscripcion fallida, limite de concursos alcanzado"             -----------------  CONSULTAR ACA SI IMPRIME O NO EL COMPROBANTE
+ENTONCES el sistema informa "Inscripcion fallida, limite de concursos alcanzado"
 
 Escenario 3: Inscripcion fallida por falta de cupo
 DADO la materia "Matematicas 3" que no tiene cupo y esta inscripto a 2 cursos
