@@ -1,0 +1,79 @@
+PROBLEMA 11 
+
+Roles:
+- Persona
+- Usuario
+
+Historias de Usuario:
+- Registrar Usuario
+- Solicitar Codigo OTP
+- Iniciar Sesion
+- Cerrar Sesion
+
+ID 1: Registrar Usuario
+TITULO: Como persona quiero registrarme en el sistema para ser usuario en el sistema
+REGLAS DE NEGOCIO:
+- 
+
+CRITERIOS DE ACEPTACION:
+Escenario 1: Registro exitoso
+DADO un mail "mati@gmail.com" que no esta registrado en el sistema
+CUANDO ingresa mail: "mati@gmail.com", contraseña: "mati123" y presiona "Registrar Usuario"
+ENTONCES el sistema da de alta el usuario e informa "Registro exitoso"
+
+Escenario 2: Registro fallido mail ya registrado
+DADO un mail "mati2@gmail.com" que esta registrado en el sistema
+CUANDO ingresa mail: "mati2@gmail.com", contraseña: "mati22" y presiona "Registrar Usuario"
+ENTONCES el sistema informa "Registro fallido, mail ya registrado"
+
+ID 2: Solicitar Codigo OTP
+TITULO: Como usuario quiero solicitar un codigo OTP para autenticarme en el sistema
+REGLAS DE NEGOCIO:
+- La cuenta solicitante debe estar activa
+
+CRITERIOS DE ACEPTACION:
+Escenario 1: Solicitud Exitosa
+DADO un correo electronico"mati@gmail.com" previamente registrado en el sistema y su cuenta esta activa
+CUANDO ingresa correo electronico: "mati@gmail.com" y presiona "Solicitar Codigo OTP"
+ENTONCES el sistema genera un código OTP numerico de seis digitos, aleatorio y de un unico uso, con una vigencia máxima de cinco minutos y se lo envia al correo electronico del usuario
+
+Escenario 2: Solicitud fallida cuenta inactiva
+DADO un correo electronico"mati2@gmail.com" previamente registrado en el sistema y su cuenta esta inactiva
+CUANDO ingresa correo electronico: "mati2@gmail.com" y presiona "Solicitar Codigo OTP"
+ENTONCES el sistema informa "Solicitud fallida, cuenta inactiva"
+
+Escenario 3: Solicitud fallida usuario no registrado
+DADO un correo electronico"mati3@gmail.com" no registrado en el sistema 
+CUANDO ingresa correo electronico: "mati3@gmail.com" y presiona "Solicitar Codigo OTP"
+ENTONCES el sistema informa "Solicitud fallida, correo electronico no registrado"
+
+ID 3: Iniciar Sesion
+TITULO: Como usuario quiero iniciar sesion para autenticarme en el sistema
+REGLAS DE NEGOCIO:
+- El codigo ingresado debe pertenecer al primer uso
+- La vigencia actual del codigo ingresado debe ser menor o igual a 5 minutos
+
+Escenario 1: Validación de código exitosa
+Dado un mail “pqr@gmail.com” que ha solicitado un código OTP y un último código recibido por correo electrónico 123456 solicitado para la cuenta el día 12/08/2026 a las 12:00, fecha actual 12/08/2026 y hora actual 12:04
+Cuando el usuario ingresa código recibido por correo electrónico 123456 y presiona el botón “Verificar código” 
+Entonces el sistema verifica el código, registra la fecha y hora del inicio de sesión y redirige al usuario a la página principal.
+
+Escenario 2:  Validación de código fallida por código vencido
+Dado un código recibido por correo electrónico 234567 solicitado para la cuenta el día 13/08/2026 a las 13:00, fecha actual 13/08/2026 y hora actual 13:06
+Cuando el usuario ingresa código recibido por correo electrónico 234567 y presiona el botón “Verificar código” 
+Entonces el sistema verifica el código, detecta que se encuentra vencido e informa “El código ingresado se encuentra vencido” 
+
+Escenario 3: Validación de código fallida por utilización de código no vigente
+Dado un código recibido por correo electrónico 891234 el día 14/08/2026 a las 14:00 y otro código 979797 recibido por correo electrónico para la misma cuenta el día 14/08/2026 a las 14:01
+Cuando el usuario ingresa código recibido por correo electrónico 891234 y presiona el botón “Verificar código” 
+Entonces el sistema verifica el código, detecta que existe un código más reciente e informa “Se ha generado un código más reciente, utilice el último recibido” 
+
+Escenario 4: Validación de código fallida por código incorrecto
+Dado un código de verificación 987654 que no corresponde código recibido por correo electrónico para el usuario “zxd@gmail.com”
+Cuando el usuario ingresa código recibido por correo electrónico 987654 y presiona el botón “Verificar código” 
+Entonces el sistema verifica el código, detecta que no corresponde al código enviado al mail del usuario e informa “El código ingresado es incorrecto”
+
+
+
+
+
