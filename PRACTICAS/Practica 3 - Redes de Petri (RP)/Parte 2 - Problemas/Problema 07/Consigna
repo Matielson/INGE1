@@ -1,0 +1,9 @@
+Ejercicio 7. Fábrica artesanal de alfajores.
+
+La fábrica artesanal de alfajores cuenta con 3 líneas de producción, que reciben pedidos independientes, para producir
+alfajores con diferentes rellenos y coberturas (dulce de leche con chocolate, dulce de leche con merengue y fruta con
+merengue).
+Cada línea de fabricación tiene un empleado que arma de a un alfajor por vez. Luego, el alfajor queda a la espera para su
+posterior embalaje. Una vez terminados los alfajores, deben empaquetarse en una caja de 6 unidades, con 2 alfajores de
+cada sabor, ya que la fábrica vende únicamente este tipo de formato.
+Finalmente se envía la caja al sector de almacenamiento
