@@ -1,0 +1,7 @@
+Ejercicio 6. Puente.
+
+a) Modelar el pasaje de vehículos a través de un puente el cual posee una sola mano por donde pasan los
+vehículos. El máximo permitido es de 3 vehículos por vez.
+b) Agregar al modelo anterior una segunda mano. Los vehículos pueden ingresar al puente por cualquiera de las
+dos manos y en cada puede haber un máximo de 3 vehículos a la vez.
+c) Agregar al modelo anterior la restricción de que sólo puede haber 4 vehículos en total sobre el puente.
