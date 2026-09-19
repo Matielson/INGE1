@@ -1,0 +1,9 @@
+Ejercicio 5. Barco que transporta vehículos.
+  
+Existen tres entradas al lugar de embarque, una entrada para motos, otra para autos y otra para camiones.
+En cada entrada se realiza una revisión de seguridad del vehículo para garantizar que no contenga nada peligroso para el
+viaje. Para ello, existen 3 operarios que pueden trabajar en cualquiera de las tres entradas, en cada entrada se puede
+revisar de a un vehículo por vez y cada vehículo es revisado por un solo operario.
+Una vez revisados los vehículos, deben esperar para subirse al barco. Por una cuestión de peso, cada barco puede
+transportar 2 camiones, 4 motos y 3 autos. Una vez que se completa la carga, el barco sale a destino.
+
