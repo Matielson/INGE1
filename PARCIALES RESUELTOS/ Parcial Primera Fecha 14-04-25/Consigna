@@ -1,6 +1,9 @@
 Haga las tarjetas completas para las historias de usuario que surjan del siguiente dominio:
-Una clínica médica privada desea desarrollar una aplicación web para facilitar la gestión de turnos entre pacientes y profesionales de la salud. En la actualidad, los turnos se asignan únicamente de manera telefónica, lo que provoca demoras, errores y sobrecarga del personal administrativo.
+Una clínica médica privada desea desarrollar una aplicación web para facilitar la gestión de turnos entre pacientes y profesionales de la salud. 
+En la actualidad, los turnos se asignan únicamente de manera telefónica, lo que provoca demoras, errores y sobrecarga del personal administrativo.
 La nueva solución permitirá a los pacientes autogestionar sus turnos y a los médicos administrar sus agendas de forma autónoma.
 Para solicitar un turno, un paciente debe estar registrado y autenticado previamente (el registro y la autenticación no deben modelarse).
-Los pacientes podrán solicitar turnos con médicos de distintas especialidades, indicando especialidad, médico, día y hora. El sistema debe permitir que el paciente solicite solo un turno por especialidad por semana. Para poder solicitar un turno el paciente debe ser mayor a 18 años.
-Los médicos registrados, previa autenticación (el registro y la autenticación no deben modelarse), podrán ingresar a su panel para ver sus turnos. Para ello deberán ingresar una fecha y el sistema deberá listar todos los turnos activos en esa fecha. El sistema debe permitir ingresar solo fechas del corriente año.
+Los pacientes podrán solicitar turnos con médicos de distintas especialidades, indicando especialidad, médico, día y hora. 
+El sistema debe permitir que el paciente solicite solo un turno por especialidad por semana. Para poder solicitar un turno el paciente debe ser mayor a 18 años.
+Los médicos registrados, previa autenticación (el registro y la autenticación no deben modelarse), podrán ingresar a su panel para ver sus turnos. 
+Para ello deberán ingresar una fecha y el sistema deberá listar todos los turnos activos en esa fecha. El sistema debe permitir ingresar solo fechas del corriente año.
