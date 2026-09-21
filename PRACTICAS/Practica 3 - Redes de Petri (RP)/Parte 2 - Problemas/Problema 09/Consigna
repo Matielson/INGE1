@@ -1,0 +1,6 @@
+Ejercicio 9. Juego en la escuela.
+
+Modelar un juego en donde participan los alumnos/as de una escuela. Para comenzar el juego, se realizan dos filas
+pertenecientes a dos equipos, el equipo A por un lado y el equipo B por otro. Para el inicio del juego se necesitan de 6
+alumnos/as, 3 del equipo A y 3 del equipo B. Una vez finalizado el juego, participan los siguientes 6 alumnos y así
+sucesivamente.
