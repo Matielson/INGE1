@@ -1,0 +1,13 @@
+Ejercicio 10. Fábrica de pastas.
+
+La fábrica cuenta con dos líneas de producción independientes, en una se realizan canelones y en la otra se realizan
+sorrentinos. Por cada una de las líneas llegan porciones de masa. Existen 3 empleados que se encargan de estirar las
+masas y pueden trabajar en cualquiera de las dos líneas.
+Una vez estiradas las masas pasan a los sectores de corte respectivos. En el caso de los canelones, de una masa se
+obtienen 3 canelones. En el caso de los sorrentinos, de una masa se obtienen 6 sorrentinos. En cada sector se corta de a
+una masa por vez.
+Luego de cortadas las masas cada unidad obtenida en el corte pasa al sector de relleno. En cada sector hay una máquina
+que realiza esta tarea. La máquina de sorrentinos rellena tres sorrentinos al mismo tiempo, mientras que la máquina de
+canelones solo rellena de a uno. Finalizado el relleno, las pastas ya están listas para ser guardarlas en cajas. En el caso de
+los sorrentinos se arman cajas de 6 sorrentinos y en el caso de los canelones las cajas contienen 3 unidades. Una vez
+armadas las cajas se despachan.
