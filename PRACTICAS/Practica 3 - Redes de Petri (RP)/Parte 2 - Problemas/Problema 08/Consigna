@@ -1,0 +1,10 @@
+Ejercicio 8. Mobiliaria.
+
+Una distribuidora mobiliaria de la ciudad recibe pedidos de muebles desarmados y empaquetados, los cuales deben ser
+armados y ensamblados para su posterior envío y entrega a domicilio.
+Los pedidos ingresan a la distribuidora por una línea única de montaje y luego son derivados al puesto A o al puesto B
+que posee dicha distribuidora. Allí los pedidos son analizados. Cada puesto atiende un pedido por vez.
+Luego, los pedidos pasan al depósito del sector de ensamblado para su armado y embalaje. Se sabe que en este sector
+hay un conjunto de empleados que trabajan juntos y van tomando los pedidos del depósito y pueden, como máximo,
+armar y embalar 3 pedidos simultáneamente. Una vez que el pedido está listo se lo pasa al sector de envíos en donde se
+esperan 5 pedidos para armar un lote que será cargado en el camión de reparto para su posterior entrega.
