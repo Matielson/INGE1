@@ -1,0 +1,14 @@
+Ejercicio 2. Máquina para cortar fiambres y fraccionarlos.
+
+La máquina cuenta con 3 entradas, una para quesos, otra para salames y otra para jamones. Antes de cortar los fiambres
+son revisados.
+
+Para revisar los quesos existen dos puestos, con un operario en cada puesto que puede revisar de a un queso por vez.
+Para los salames existe un único puesto que permite el control de dos salames como máximo por vez, por último los
+jamones son revisados en tres puestos con tres empleados que pueden trabajar en cualquier puesto y revisar de a un
+jamón por vez.
+
+Una vez controlados los fiambres están preparados para ser fraccionados. Los quesos se cortan en cuatro partes, los
+jamones se cortan en dos partes y los salames en tres partes. Luego se arman los combinados, cada combinado está
+formado por dos partes de queso, dos partes de salame y tres partes de jamón. Por último cada combinado es
+despachado.
