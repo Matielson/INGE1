@@ -1,0 +1,8 @@
+Ejercicio 11. Recital
+
+Se desea modelar utilizando una Red de Petri el ingreso de personas a un recital. Las personas pueden llegar desde dos
+calles diferentes. En cada calle hay cuatro inspectores quienes realizan revisiones. Cada revisión la realizan dos
+inspectores al mismo tiempo, y sólo pueden revisar de a una persona a la vez. Una vez que las personas son revisadas
+pueden ingresar al recital por cualquiera de las tres puertas (existe una única cola para las tres puertas). En cada puerta
+hay un detector de metales por el cual puede pasar de a una persona por vez. Por último, las personas se ubican en
+alguno de los dos sectores disponibles para el recital.
