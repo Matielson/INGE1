@@ -1,0 +1,9 @@
+Ejercicio 12. Aserradero.
+
+Al lugar llegan troncos de árboles en bruto por dos puertas distintas. Cada tronco debe ser primero inspeccionado
+individualmente. Esta tarea la realiza un inspector especializado, habiendo un inspector por puerta.
+Luego, los troncos pasan al único sector de corte del aserradero. En este sector se cortan los troncos de a uno. Por cada
+tronco se generan cuatro tablones y cuatro desperdicios (sobrantes que no se usan). Los desperdicios van a parar a un
+contenedor para luego ser desechados.
+Cada tablón debe pasar a alguno de los dos sectores de cepillado del aserradero, donde se cepilla de a un tablón por vez.
+Luego, pasan al sector de empaquetado donde se agrupan de a 6 tablones, para luego ser despachados.
