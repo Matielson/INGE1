@@ -1,0 +1,7 @@
+Ejercicio 13. Legalización de documentos.
+
+Los documentos llegan de a uno a la oficina y deben ser triplicados en una de las dos fotocopiadoras existentes. Una vez
+elegida la fotocopiadora, se solicita al encargado de esa fotocopiadora, las tres copias del documento. La fotocopiadora
+sólo imprime de a una copia por vez. Hasta no terminar las 3 copias, el empleado no puede recibir nuevos documentos.
+Al terminar las tres copias de un documento, deben empaquetarse juntas para ser derivadas al sector de asuntos legales.
+En ese momento, se libera el encargado de la fotocopiadora para recibir nuevos documentos.
