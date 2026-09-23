@@ -1,0 +1,20 @@
+1. Spa de hotel | Circuitos de tratamiento
+
+Ingeniería de Software I 2025 — Parcial Segunda Fecha 19/10/25
+
+Se desea modelar con una red de Petri el funcionamiento de los servicios de spa de un hotel.
+Los huéspedes llegan al spa del hotel y antes de realizar cualquier tratamiento deben registrarse. El spa
+dispone de dos empleados para el registro, que pueden atender a un huésped a la vez, en cualquiera de las 2
+mesas de registración. Una vez registrados, los clientes se dirigen a un área de espera común.
+Se pueden utilizar dos circuitos diferentes de tratamiento:
+Circuito A: Tratamientos corporales
+Los huéspedes que utilizan este circuito pasan primero por una sala que posee dos puestos de masajes, con
+dos terapeutas que pueden atender simultáneamente, pero a no más de un huésped a la vez cada uno. Cada
+terapeuta siempre trabaja en el mismo puesto de masajes. Luego del masaje, los huéspedes se dirigen hacia
+la sala de meditación, la cual sólo se abre cuando hay exactamente 5 personas listas para la sesión. La
+meditación se realiza en grupo y la sala no se puede usar hasta que la sesión termine. Al finalizar, los
+huéspedes pasan a una área de descanso común para luego retirarse del spa.
+Circuito B: Circuito hídrico
+Los huéspedes que utilizan este circuito se dirigen al área de hidromasaje, la cual dispone de una bañera que
+tiene capacidad de hasta 4 personas. Luego del hidromasaje los huéspedes también se dirigen al área de
+descanso común para luego retirarse del spa.
