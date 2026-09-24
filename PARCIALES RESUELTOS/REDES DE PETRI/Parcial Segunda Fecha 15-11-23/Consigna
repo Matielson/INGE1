@@ -1,0 +1,8 @@
+9. Línea de producción de quesos
+
+Ingeniería de Software I 2023 — Parcial Segunda Fecha 15/11/23
+  
+Se desea modelar a través de una red de Petri una línea de producción de quesos. A la línea ingresan diferentes recipientes de leche.
+Cada recipiente deberá ser controlado en cualquiera de los dos puestos existentes. Para controlar los recipientes existe un único inspector que puede controlar de a un recipiente por vez y que deberá ir alternando el control en cada puesto de trabajo, comenzando en el puesto 1, luego controlando en el puesto 2, luego en el 1 y así siguiendo.
+Luego de controlados los recipientes pasan a una cola común antes de la pasteurización de la leche. Para dicha tarea existen dos operarios que pueden pasteurizar un recipiente cada vez. Cada operario tiene un puesto de trabajo diferente.
+Luego de la pasteurización, la leche está lista para la realización del queso. Es necesario juntar 2 recipientes pasteurizados para el armado de un queso. Luego los quesos son despachados.
