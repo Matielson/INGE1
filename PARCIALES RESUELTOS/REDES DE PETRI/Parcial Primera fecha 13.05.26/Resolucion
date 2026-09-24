@@ -1,0 +1,63 @@
+Roles:
+- Usuario
+- Administrador
+
+Historias de Usuario:
+- Solicitar Kit
+- Agregar Elemento
+
+HU 1
+ID: Solicitar Kit
+TITULO: Como Usuario quiero solicitar un kit para grabar presentaciones, entrevistas o material audiovisual para trabajos academicos
+REGLAS DE NEGOCIO:
+- Los prestamos pueden durar como maximo 3 horas
+- Un usuario puede solicitar un prestamo si no tiene algun prestamo anterior activo
+
+CRITERIOS DE ACEPTACION:
+Escenario 1: Solicitud Exitosa
+DADO un mail: "mati@gmail.com" que no tiene ningun prestamo anterior activo, la duracion del prestamo es de 2 horas, tipo de kit: "Avanzado" que tiene disponibilidad
+CUANDO selecciona tipo de kit: "Avanzado", Dia: 25/09/26, Hora de retiro: 16:30, Duracion del prestamo (en horas): 2 y presiona el boton "Solicitar Kit"
+ENTONCES el sistema da de alta la solicitud e informa "Solicitud Exitosa"
+
+Escenario 2: Solicitud Fallida por exceso de duracion del prestamo permitida
+DADA la duracion del prestamo es de 4 horas
+CUANDO selecciona tipo de kit: "Basico", Dia: 26/09/26, Hora de retiro: 12:00, Duracion del prestamo (en horas): 4 y presiona el boton "Solicitar Kit"
+ENTONCES el sistema informa "Solicitud Fallida, duracion del prestamo mayor a la permitida"
+
+Escenario 3: Solicitud Fallida por prestamo anterior activo
+DADO un mail "mati2@gmail.com" que tiene algun prestamo anterior activo
+CUANDO selecciona tipo de kit: "Avanzado", Dia: 26/09/26, Hora de retiro: 12:00, Duracion del prestamo (en horas): 2 y presiona el boton "Solicitar Kit"
+ENTONCES el sistema informa "Solicitud Fallida, tiene un prestamo activo"
+
+Escenario 4: Solicitud Fallida por falta de disponibilidad
+DADO el tipo de kit: "Basico" sin disponibilidad registrada en el sistema
+CUANDO selecciona tipo de kit: "Basico", Dia: 27/09/26, Hora de retiro: 9:00, Duracion del prestamo (en horas): 1 y presiona el boton "Solicitar Kit"
+ENTONCES el sistema informa "Solicitud Fallida, sin disponibilidad"
+
+HU 2
+ID: Agregar Elemento
+TITULO: Como Administrador quiero agregar un nuevo elemento para que forme parte de un kit
+REGLAS DE NEGOCIO:
+- El precio de compra debe ser como maximo $1.000.000 de pesos
+
+CRITERIOS DE ACEPTACION:
+Escenario 1: Agregado Exitoso de elemento Nacional
+DADO el numero de serie: 001 que no esta registrado y el precio de compra: $900.000 que es menor al maximo permitido
+CUANDO ingresa numero de serie: 001, tipo de elemento: "Camara", precio de compra: $900.000, origen de fabricacion: "Argentina" y fecha de alta 26/09/26
+ENTONCES el sistema agrega el elemento e informa "Agregado Exitoso"
+
+Escenario 2: Agregado Exitoso de elemento Internacional
+DADO el numero de serie: 002 que no esta registrado y el precio de compra: $500.000 que es menor al maximo permitido
+CUANDO ingresa numero de serie: 002, selecciona el tipo de elemento: "Microfono", ingresa precio de compra: $500.000, ingresa origen de fabricacion: "Brasil" y selecciona fecha de alta 27/09/26
+ENTONCES el sistema agrega el elemento e informa "Agregado Exitoso"
+
+Escenario 3: Agregado Fallido por numero de serie ya registrado en el sistema
+DADO el numero de serie: 002 ya registrado en el sistema
+CUANDO ingresa numero de serie: 002, selecciona tipo de elemento: "Microfono", ingresa precio de compra: $340.000, ingresa origen de fabricacion: "Rusia" y selecciona fecha de alta 28/09/26
+ENTONCES el sistema informa "Agregado fallido, numero de serie ya registrado en el sistema"
+
+Escenario 4: Agregado Fallido por precio de compra superior al maximo permitido
+DADO el precio de compra: $1.100.000 que es mayor al maximo permitido
+CUANDO ingresa numero de serie: 004, selecciona tipo de elemento: "Tripode", ingresa precio de compra: $1.100.000, ingresa origen de fabricacion: "Argentina" y selecciona fecha de alta 29/09/26
+ENTONCES el sistema informa "Agregado Fallido, precio de compra superior al maximo permitido"
+
