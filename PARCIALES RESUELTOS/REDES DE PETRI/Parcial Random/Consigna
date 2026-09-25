@@ -1,0 +1,11 @@
+10. Plataforma de entrenamiento de modelos de Inteligencia Artificial
+
+Modele con una red de Petri el funcionamiento de una plataforma de entrenamiento de modelos de Inteligencia Artificial.
+Existen tres tipos de insumos que ingresan al sistema por canales independientes. En el primer canal ingresan datasets, en el segundo canal ingresan arquitecturas de modelos, y en el tercer canal ingresan configuraciones de entrenamiento.
+Todos los insumos deben ser validados antes de poder utilizarse.
+En el canal de datasets existen dos nodos de validación y un único especialista, que puede validar un solo dataset por vez y debe alternarse entre ambos nodos, es decir, primero valida un dataset en el nodo uno, luego valida un dataset en el nodo dos, y así sucesivamente.
+En el caso de las arquitecturas de modelos, también existen dos nodos de validación, pero en cada nodo hay un especialista dedicado, que valida una arquitectura por vez.
+En el caso de las configuraciones de entrenamiento, existe un validador automático que permite evaluar hasta cuatro configuraciones en simultáneo como máximo.
+Una vez validados los insumos, se procede al entrenamiento del modelo. Para poder entrenar un modelo es necesario contar con un dataset, una arquitectura y una configuración de entrenamiento.
+Una vez entrenado, el modelo pasa al sector de evaluación, donde se pueden evaluar hasta dos modelos en paralelo como máximo.
+Por último, los modelos evaluados son agrupados para su despliegue en producción. El despliegue se realiza en lotes de cuatro modelos, los cuales se publican conjuntamente.
